@@ -1,0 +1,21 @@
+{
+  "name": "screen-share-annotation",
+  "version": "1.0.7",
+  "description": "screen share annotation tool for windows",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm run build",
+    "build": "rc.exe /nologo resources\\resources.rc & cl ScreenShareAnnotation.cpp resources\\resources.res /O2 /MT /nologo /link /SUBSYSTEM:WINDOWS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symphonyoss/ScreenShareAnnotation.git"
+  },
+  "author": "symphony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symphonyoss/ScreenShareAnnotation/issues"
+  },
+  "homepage": "https://github.com/symphonyoss/ScreenShareAnnotation#readme",
+  "os": "win32"
+}
